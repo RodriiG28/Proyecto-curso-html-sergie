@@ -1,0 +1,305 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #92a4ff;
+}
+
+h1 {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin: 15px;
+    text-align: center;
+}
+.bienv h2 {
+    background-color:#242424;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    font-size: 2.5rem;
+}
+.col1 {
+    background-color: rgb(207, 207, 207);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-preferencias {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.imagen1 {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 25%;
+    height: auto;
+}
+
+.imagen2 {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 25%;
+    height: auto;
+}
+
+.imagen3 {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 35%;
+    height: auto;
+}
+
+.article {
+    float: left;
+    width: 70%;
+    background-color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #CCC;
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+    bottom: 0;
+}
+
+#boton-silenciar,
+#boton-reproducir {
+    padding: 14px 10px;
+    margin-right: 1rem;
+    box-decoration-break: unset;
+    color: white;
+    float: right;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+#boton-silenciar:hover:not(.active),
+#boton-reproducir:hover:not(.active) {
+
+    background-color: #111;
+    text-align: center;
+    padding: 14px 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: #FFF;
+}
+
+td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    background-color: rgb(162, 162, 162);
+}
+
+video {
+    width: 600px;
+}
+
+.fondo-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (ajusta esto según tu relación de aspecto) */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-principal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para hacer que el texto sea más legible */
+}
+
+.text-overlay p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.text-overlay .titulo-video-inicio {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    background-color: rgba(0, 0, 0, 0.433);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: transparent 10px solid;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 33vw;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+
+.centrado-audio {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para hacer que el texto sea más legible */
+}
+
+.centrado-audio audio::-webkit-media-controls-play-button {
+    color: #11ff00;
+    /* Cambiar el color del botón de reproducción en navegadores webkit */
+}
+
+.centrado-audio audio {
+    width: 32%;
+}
+
+
+.centrado-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    /* Fondo semitransparente para hacer que el texto sea más legible */
+}
+
+input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }

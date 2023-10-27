@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><b>Tortunet</b></title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shorcunt icon" href="/assets/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+</head>
+
+<body>
+    <audio id="musica" loop>
+        <source src="/assets/audio/this-minimal-technology-pure-12327.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <header>
+        <h1><b>Tortunet</b>_ar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="repuestos.html">Repuestos</a></li>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+
+                <button id="boton-reproducir">Reproducir</button>
+                <button id="boton-silenciar"> Silenciar</button>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required minlength="3">
+            <label for="nombre">Apellido:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su apellido" required minlength="3">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+            <label for="pais">País:</label>
+            <select name="pais" id="pais">
+                <option value="argentina">Argentina</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="chile">Chile</option>
+                <option value="brasil">Brasil</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="peru">Perú</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+            </select>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+            <label for="motivo">Motivo de contacto:</label>
+            <input type="radio" name="motivo" id="motivo" value="consulta" checked>Consulta
+            <input type="radio" name="motivo" id="motivo" value="reclamo">Reclamo
+            <input type="radio" name="motivo" id="motivo" value="sugerencia">Sugerencia
+            <input type="radio" name="motivo" id="motivo" value="otro">Otro
+
+            <input type="checkbox" name="aceptar" id="aceptar" required>
+            <label for="aceptar">Acepto los términos y condiciones</label>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados <b>Tortunet</b>_ar &copy;2023</p>
+    </footer>
+</body>
+<script src="/script.js"></script>
+
+</html>
